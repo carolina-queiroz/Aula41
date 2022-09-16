@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ExercicioNavigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="primeiro_fragmento">Primeiro Fragmento</string>
+    <string name="ir_para_terceiro_fragmento">ir para terceiro fragmento</string>
+    <string name="ir_para_segundo_fragmento">ir para segundo fragmento</string>
+    <string name="escreva_um_dado_booleano">escreva um dado booleano</string>
+    <string name="escreva_um_n_mero_inteiro">escreva um número inteiro</string>
+    <string name="segundo_fragmento">segundo fragmento</string>
+    <string name="escreva_um_numero_decimal">escreva um numero decimal</string>
+    <string name="voltar_para_primeiro_fragmento">voltar para primeiro fragmento</string>
+    <string name="terceiro_fragmento">terceiro fragmento</string>
+    <string name="escreva_texto">escreva um texto</string>
+    <string name="ir_para_primeiro_fragmento">ir para primeiro fragmento</string>
+    <string name="voltar_segundo_fragmento">voltar para segundo fragmento</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/primeiroFragment">
+
+    <fragment
+        android:id="@+id/primeiroFragment"
+        android:name="com.example.exercicionavigation.fragments.PrimeiroFragment"
+        android:label="fragment_primeiro"
+        tools:layout="@layout/fragment_primeiro" >
+        <action
+            android:id="@+id/action_primeiroFragment_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+        <action
+            android:id="@+id/action_primeiroFragment_to_terceiroFragment"
+            app:destination="@id/terceiroFragment" />
+        <argument
+            android:name="string"
+            app:argType="string"
+            android:defaultValue="ola" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/segundoFragment"
+        android:name="com.example.exercicionavigation.fragments.SegundoFragment"
+        android:label="fragment_segundo"
+        tools:layout="@layout/fragment_segundo" >
+        <action
+            android:id="@+id/action_segundoFragment_to_terceiroFragment"
+            app:destination="@id/terceiroFragment" />
+        <action
+            android:id="@+id/action_segundoFragment_to_primeiroFragment"
+            app:destination="@id/primeiroFragment" />
+        <argument
+            android:name="int"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="boolean"
+            app:argType="boolean"
+            android:defaultValue="false" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/terceiroFragment"
+        android:name="com.example.exercicionavigation.fragments.TerceiroFragment"
+        android:label="fragment_terceiro"
+        tools:layout="@layout/fragment_terceiro" >
+        <action
+            android:id="@+id/action_terceiroFragment_to_primeiroFragment"
+            app:destination="@id/primeiroFragment" />
+        <action
+            android:id="@+id/action_terceiroFragment_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+        <argument
+            android:name="float"
+            app:argType="float"
+            android:defaultValue="0.0"/>
+
+    </fragment>
+</navigation>
