@@ -21,7 +21,7 @@ class SegundoFragment: Fragment() {
 
         val args = SegundoFragmentArgs.fromBundle(requireArguments())
         binding.tvIntEBoolean.text =
-            "O inteiro digitado foi ${args.int} e o booleano ${args.boolean} "
+            "O inteiro digitado foi ${args.intSent} e o booleano ${args.booleanSent} "
 
         binding.btnTerceiroFragmento.setOnClickListener {view: View ->
             this.doubleAenviar = binding.etDouble.text.toString()

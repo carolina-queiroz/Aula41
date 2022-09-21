@@ -11,8 +11,8 @@ import com.example.exercicionavigation.databinding.FragmentPrimeiroBinding
 class PrimeiroFragment : Fragment() {
 
     private lateinit var binding: FragmentPrimeiroBinding
-    private lateinit var intAenviar: String
-    private lateinit var booleanAenviar: String
+    private var intAenviar: Int = 0
+    private var booleanAenviar: Boolean = false
 
 
     override fun onCreateView(
@@ -30,10 +30,10 @@ class PrimeiroFragment : Fragment() {
         }
 
         binding.btnSegundoFragmento.setOnClickListener { view: View ->
-            this.intAenviar = binding.etInt.text.toString()
-            this.booleanAenviar = binding.etBoolean.toString()
+            this.intAenviar = binding.etInt.text.toString().toInt()
+            this.booleanAenviar = binding.etBoolean.text.toString().toBoolean()
             view.findNavController()
-                .navigate(PrimeiroFragmentDirections.actionPrimeiroFragmentToSegundoFragment())
+                .navigate(PrimeiroFragmentDirections.actionPrimeiroFragmentToSegundoFragment(intAenviar, booleanAenviar))
         }
     return binding.root
 }
